@@ -4,9 +4,12 @@ project:
     - file: content/Index.md
     - file: content/Quickstart.md
     - file: content/Introduction.md
+    - file: content/Theory.md
+    - file: content/PCMS.md
     - file: content/Results.ipynb
     - file: content/Conclusion.md
     - title: Appendix
       children:
+        - file: content/AdditionalPlots.md
         - file: content/Cheatsheet.md
         - file: errorlog.md

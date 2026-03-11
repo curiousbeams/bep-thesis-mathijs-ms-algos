@@ -1,11 +1,11 @@
 version: 1
 project:
-  title: TU Delft's JB Starterkit
+  title: Implementation of more accurate multislice algorithms for low energy TEM
   # description:
-  keywords: [Jupyter Book, Open Science, TU Delft, Starterkit]
+  keywords: [Jupyter Book, TU Delft, Bachelor eindproject, BEP, Bachelor thesis]
 
-  github: https://github.com/TUD-JB-OS/starterkit
-  date: 2026-01-31
+  github: https://github.com/curiousbeams/bep-thesis-mathijs-ms-algos
+  date: 2026-03-11
   
     # used to load /reuse materials from other repositories
   references:
