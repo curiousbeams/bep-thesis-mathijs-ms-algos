@@ -6,8 +6,10 @@ project:
     - file: content/Introduction.md
     - file: content/Theory.md
     - file: content/PCMS.md
-    - file: content/Results.ipynb
+    - file: content/FCMS.md
+    - file: content/ComparativeAnalysis.md
     - file: content/Conclusion.md
+    - file: content/Recommendations.md
     - title: Appendix
       children:
         - file: content/AdditionalPlots.md

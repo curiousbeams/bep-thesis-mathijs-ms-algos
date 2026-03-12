@@ -1,4 +1,4 @@
-# Propagator corrected MS
+# Propagator Corrected MS
 ## Theoretical Framework
 The CMS approximates the Ewald sphere as a parabola.
 Therefore, it is only accurate for small scattering angles which is not a good approximation when the accelerating voltage is lower and the electrons scatter at higher angles.
@@ -24,7 +24,7 @@ $$
 $$
 Here we find the CMS operator inside the square brackets in addition to a series of higher order terms to correct for the Ewald sphere curvature.
 
-## Python implementation
+## Python Implementation
 Eq.[](#propagator_corrected_multislice_taylor_series) can be implemented numerically by utilizing the same method used for the exponent series where the higher powers of the propagator part can be calculated by applying the operator multiple times.
 After adding the right prefactor and taking the exponent we end up with correct result.
 
@@ -38,7 +38,6 @@ For the simulation a sampling interval of 0.1 $\AA$ x 0.1 $\AA$ was used and a s
 
 The two methods (realspace MS and PCMS) are applied to a crystal of SrTiO3 @osti_1263154 with size of (1x1x24) unit cells and (1x1x48) unit cells for planewaves of different energies. 
 The propagator corrected operator is chosen to include up to the third power correction term.
-In this section only the results for 48c thickness are presented where the 24c results can be found in @AdditionalPlots.
 To speed up calculations, the existing laplace stencil provided by abTEM was adapted to be able to utilize the GPU.
 All calculations were performed on a NVIDIA A40 GPU @imphys_hpc_hardware. 
 
@@ -47,6 +46,19 @@ Because most electrons pass by the sample without scattering, the central pixel 
 For that reason in the next plot the central pixel is set to 0.
 To even further enhance visible detail the power of 0.25 is applied to the image.
 
+::::{tab-set}
+:::{tab-item} 24c
+```{figure} ./plots/SrTiO3_PW_24_(PC)_blockdirect.png
+:label: SrTiO3_PW_24_PC_blockdirect
+:width: 100%
+:align: center
+
+Diffraction patterns for SrTiO$_3$ illuminated by planewave for different energies with 24 unitcells thickness in z axis and power=0.25
+```
+
+:::
+
+:::{tab-item} 48c
 ```{figure} ./plots/SrTiO3_PW_48_(PC)_blockdirect.png
 :label: SrTiO3_PW_48_PC_blockdirect
 :width: 100%
@@ -54,6 +66,9 @@ To even further enhance visible detail the power of 0.25 is applied to the image
 
 Diffraction patterns for SrTiO$_3$ illuminated by planewave for different energies with 48 unitcells thickness in z axis and power=0.25
 ```
+:::
+::::
+
 
 In the next plots we are comparing the difference between the two methods.
 Instead of blocking the direct beam and taking a power we calculate the lower and upper 3\% quantiles of the two upper rows combined as well as for the difference plot and clip the image using those values.
@@ -61,6 +76,19 @@ Instead of blocking the direct beam and taking a power we calculate the lower an
 The result is the same dynamic range for all images allowing for a greater comparison.
 In the lowest row, the two plots are subtracted and again clipped by the 3\% quantiles of all subtracted plots combined.
 
+::::{tab-set}
+:::{tab-item} 24c
+```{figure} ./plots/SrTiO3_PW_24_(PC)_magma.png
+:label: SrTiO3_PW_24_PC
+:width: 100%
+:align: center
+
+Comparison of the conventional multislice (CMS) and the propagator corrected multislice (PCMS) for SrTiO$_3$ with 24 unitcells thickness in z axis
+```
+
+:::
+
+:::{tab-item} 48c
 ```{figure} ./plots/SrTiO3_PW_48_(PC)_magma.png
 :label: SrTiO3_PW_48_PC
 :width: 100%
@@ -68,3 +96,5 @@ In the lowest row, the two plots are subtracted and again clipped by the 3\% qua
 
 Comparison of the conventional multislice (CMS) and the propagator corrected multislice (PCMS) for SrTiO$_3$ with 48 unitcells thickness in z axis
 ```
+:::
+::::

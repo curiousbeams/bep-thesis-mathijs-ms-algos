@@ -26,6 +26,7 @@ Supervisor.
 
 ![](figures/cover.png)
 
+
 +++
 
 This thesis reports on the use of Jupyter Book for open publishing at TU Delft - especially bachelor and master thesis. It provides a quick setup for your open publishing project, including a template and guidelines for using Jupyter Book effectively. The starterkit is designed to help you create and share your research in an open and accessible way.
