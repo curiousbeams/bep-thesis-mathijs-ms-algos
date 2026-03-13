@@ -20,13 +20,15 @@ project:
   
   jupyter:
     binder:
-      repo: https://github.com/executablebooks/thebe-binder-base
+      repo: https://github.com/curiousbeams/bep-thesis-mathijs-ms-algos
   
 extends:
   - toc.yml     # includes table of contents
   - export.yml  # includes export configurations
   - plugins.yml
   - authors.yml
+
+
   
 site:
   template: book-theme

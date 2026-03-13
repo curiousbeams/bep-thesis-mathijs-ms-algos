@@ -28,11 +28,11 @@ project:
       mainmatter_numbering: arabic
 
   options:      
-    thesis_degree: Master of Science
+    thesis_degree: Bachelor of Science
     thesis_program: Applied Physics
     thesis_faculty: Faculty of Applied Sciences
     thesis_institution: Delft University of Technology
-    thesis_defense_date: Friday June 19, 2026 at 10:00
+    thesis_defense_date: Friday December 19, 2025
 
   # downloads:
   #   - id: report_tex
