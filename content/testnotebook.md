@@ -5,8 +5,5 @@ kernelspec:
 ---
 
 ```{code-cell} 
-import sys
-import os
-
-print(f"Python Path: {sys.executable}")
+import abtem
 ```
