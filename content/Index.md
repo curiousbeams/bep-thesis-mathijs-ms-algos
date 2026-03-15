@@ -10,7 +10,7 @@ numbering:
   title:
     enabled: false
 
-no-update-date: true
+# no-update-date: true
 ---
 
 +++ { "kind": "split-image" }

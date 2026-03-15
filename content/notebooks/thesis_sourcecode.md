@@ -222,7 +222,7 @@ waves._array = waves._array - backscatter
 ```
 
 (back-propagate_backscattered-waves)=
-```{code-cell}
+```{code-cell} python
 def _back_propagate_backscattered_waves(
     backscattered_waves: Waves,
     potential: BasePotential,

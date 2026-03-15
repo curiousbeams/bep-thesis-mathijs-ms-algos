@@ -34,7 +34,7 @@ To calculate the exponent of this series we use the same exponential as in the p
 In order to compare the propagator corrected multislice as fairly as possible to the conventional multislice, we will perform the conventional multislice calculations in realspace. 
 Keeping the calculations in realspace creates some artifacts compared to the fourier version, especially at low voltages (see @FFTvsRS), due the approximation of the laplacian by a finite difference stencil.
 However, since the fully corrected multislice can only be implemented in realspace, we decided to calculate the CMS in realspace as well.
-For the simulation a sampling interval of 0.1 $\AA$ x 0.1 $\AA$ was used and a slice thickness of 0.05 $\AA$.
+For the simulation a sampling interval of 0.1 $\mathring{A}$ x 0.1 $\mathring{A}$ was used and a slice thickness of 0.05 $\mathring{A}$.
 
 The two methods (realspace MS and PCMS) are applied to a crystal of SrTiO3 @osti_1263154 with size of (1x1x24) unit cells and (1x1x48) unit cells for planewaves of different energies. 
 The propagator corrected operator is chosen to include up to the third power correction term.

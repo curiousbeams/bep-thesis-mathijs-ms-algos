@@ -20,7 +20,6 @@ project:
   
   jupyter:
     binder:
-      python: "3.11"
       repo: https://github.com/curiousbeams/bep-thesis-mathijs-ms-algos
   
 extends:

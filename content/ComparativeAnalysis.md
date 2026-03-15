@@ -35,10 +35,8 @@ Still, at 10 keV, the PCMS and FCMS still mostly agree since we only see red and
 To show the difference between them we can go to an even lower voltage, namely 5 kV.
 
 ::::{grid} 2
-:gutter: 2
 
 :::{grid-item-card}
-:outline: false
 ```{figure} ./plots/SrTiO3_PW_24_RGB_5kV.png
 :label: fig:SrTiO3_PW_24_RGB_5kV
 :align: center
@@ -46,7 +44,6 @@ Thickness 24c
 :::
 
 :::{grid-item-card}
-:outline: false
 ```{figure} ./plots/SrTiO3_PW_48_RGB_5kV.png
 :label: fig:SrTiO3_PW_48_RGB_5kV
 :align: center
@@ -65,7 +62,6 @@ Therefore, we will now perform the same simulation but with a converged probe.
 
 (CBED-all)=
 ```{figure} ./plots/CBED_all_24.png
-:label: CBED_all
 :width: 100%
 :align: center
 
@@ -87,9 +83,9 @@ Although less clear than for the planewaves, we again observe a slight separatio
 Unlike the planewave simulation, the CBED simulation is dependent on its position above the sample. 
 To account for this, we perform a STEM measurement where we take the same converged probe but take a measurement at many different positions.
 
-A gridscan was performed on a grid of 2x2 the unitcell size with a sampling distance of 0.2 $\AA$ on a sample of 8x8x24 unitcells of SrTiO$_3$.
+A gridscan was performed on a grid of 2x2 the unitcell size with a sampling distance of 0.2 $\mathring{A}$ on a sample of 8x8x24 unitcells of SrTiO$_3$.
 The sampling was based on the Nyquist sampling rate of the highest energy beam.
-For each scan a multislice simulation was performed with a sampling size of 0.1 $\AA$ and a slice thickness of 0.2 $\AA$ $with a probe semi-angle cutoff of 20 mrad.
+For each scan a multislice simulation was performed with a sampling size of 0.1 $\mathring{A}$ and a slice thickness of 0.2 $\mathring{A}$ $with a probe semi-angle cutoff of 20 mrad.
 For each of the final exit waves for each position a annular detector was applied with an inner diameter of 25 mrad (just outside the central beam) and no outer radius. 
 The lowest energy of these scans was 20 keV, because at 10 keV, the probe size is much larger than the distance between the atoms. This makes the probe exitwave less position dependent since at each scan location the probe sees most of the unitcell, resulting in a very blurry scan. This process can also be observed with the chosen voltages since for each lowering of the voltage the final image becomes blurrier.
 
@@ -102,7 +98,6 @@ Position and size of the grid scan for a sample of 8x8x24 unitcells of SrTiO3
 ```
 (pacbed)=
 ```{figure} ./plots/PACBED.png
-:label: PACBED
 :width: 100%
 :align: center
 
@@ -133,7 +128,7 @@ To demonstrate the increased computation time we perform all three methods on a 
 Both the PCMS and FCMS were calculated up to a power of 3 like in previous chapters.
 
 ```{figure} ./plots/performance.png
-:label: performance
+:label: performance2
 :width: 75%
 :align: center
 
