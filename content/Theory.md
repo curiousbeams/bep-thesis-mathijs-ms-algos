@@ -100,12 +100,13 @@ $$
 The first operator in the exponent is called the Fresnel propagator, while the second is the transmission operator.
 If we now apply the transmission operator in realspace by multiplying it with the incident wave function, we are left with the transmitted wave.
 Then the Fourier transform is taken of this transmitted wave and multiplied by the fourier transform of the Fresnel propagator which turns into a simple multiplication.
-%Shouldn't the Fresnel propagator have a slice thickness dependence? Is this absorbed in the K_0 factor or moved to the transmission operator instead?
 $$
 \mathcal{F}\left[\exp \left( \frac{i\varepsilon\Delta}{4\pi K_0} \right)\right] = \exp  \left[-\frac{i\pi \varepsilon k^2}{K_0}\right]
 $$
 
 After that, the inverse Fourier transform is taken to obtain the final wave. 
+
+(fourier-multislice-operator)=
 $$
 \varphi_j(\mathbf{R}) = \mathcal{F}^{-1}\left\{\exp \left[-\frac{i\pi \varepsilon k^2}{K_0}\right]  \mathcal{F} \left[\exp \left(i\varepsilon\sigma U_j(\mathbf{R}) \right) \varphi_{j-1}(\mathbf{R})\right] \right\}
 $$
@@ -122,5 +123,6 @@ $$
 
 To get the power $n$ of the multislice operator, we simply apply it $n$ times.
 By using this method it is possible for the series to diverge @Zekendorf2024 depending on slice thickness and sampling size.
+The code for the conventional multislice operator can be found in [Code. 1](#conventional-operator)
 
-Then we can use the exponential series to calculate the exponent of the conventional operator applied to the incident wavefunction.
+Then we can use the exponential series to calculate the exponent of the conventional operator applied to the incident wavefunction [Code. 2](#multislice_exponential-series).

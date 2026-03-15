@@ -23,7 +23,7 @@ simulation software
 Author: Mathijs van den Doel  
 Supervisor: Dr. Georgios Varnavides 
 
-![](figures/cover.png)
+![](figures/CBED_cover.png)
 
 
 +++
@@ -57,7 +57,7 @@ Jump to conclusions
 ```
 ```{card}
 :header: Jupyter Notebooks
-:url: https://jupyterbook.org/
+:link: notebooks/multislice_fast.ipynb
 
 Go to interactive notebooks
 ```

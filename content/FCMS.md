@@ -1,3 +1,4 @@
+(FCMS)=
 # Fully Corrected MS
 ## Theoretical Framework
 ### Improved Multislice
@@ -66,7 +67,7 @@ In reality however, this is often not the case and instead the waves are incoher
 ### Improved Multislice
 As described earlier, we can calculate the powers of the conventional multislice step inside the FCMS taylor series by applying the CMS step multiple times.
 Summing these powers until a chosen order $n$ with the correct prefactor gives us Eq.[](#fully-corrected-ms-ts).
-After which we again use the exponential series to calculate its exponent.
+After which we again use the exponential series to calculate its exponent [Code. 4](#full-series).
 
 Because Eq.[](#khat-operator-ts) and Eq.[](#khat-operator-reciprocal-ts) also use the fully corrected multislice power series we can reuse it, except for the
 prefactor in Eq.~\ref{khat_operator_reciprocal_taylor_expansion} being slightly different.
@@ -74,6 +75,7 @@ For this reason, we introduce the ability to override the prefactor.
 
 ### Backscattering
 To calculate the total backscattered wave, we need to calculate and store the backscattered wave from each slice which would make up the total wave and multislice each part through the rest of the sample.
+Calculating the backscattered wave at each slice is done by [Code. 5](#calculate-backscatter)
 For storing the backscattered wave at each slice, abTEM provides a functionality we exploit called exit planes which allows the specification of indices where the wavefunction at that slice index is stored in an array. 
 This is very useful to see the forming of the exit wave inside the sample.
 But, by overriding these exit planes with our backscattered wave at each slice, we can easily calculate the total backscattered wavefunction without heavy modifications to the existing codebase.
@@ -81,7 +83,7 @@ But, by overriding these exit planes with our backscattered wave at each slice, 
 Because we store a backscattered wave at each slice and not the operator and since the multislice operator is linear, we can use Eq.[](#backscatter-formula) in a more efficient way.
 Starting at the last slice ($j=N$), we take the part of the wave that backscattered at that slice and apply the multislice operator once to take it to slice $N-1$.
 There we add the backscattered wave coming from that slice and apply the multislice operator again on this new total wave.
-This process is repeated for the entire specimen until we reach the entrance surface.
+This process is repeated for the entire specimen until we reach the entrance surface [Code. 6](#back-propagate_backscattered-waves).
 In the case of fully incoherent waves, the individual backscattered waves from each slice should be summed by their intensities.
 For that reason this method does not work since we sum as we go through the sample.
 This is identical to using Eq. [](#backscatter-formula).

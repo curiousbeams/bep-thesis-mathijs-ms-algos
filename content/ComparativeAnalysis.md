@@ -82,7 +82,7 @@ RGB comparison between R = CMS (RS), G = PCMS, B = FCMS for sample thickness 24c
 
 Although less clear than for the planewaves, we again observe a slight separation of red and cyan at 20 keV, which gets more clear at 10 keV.
 
-
+(STEM)=
 ### STEM
 Unlike the planewave simulation, the CBED simulation is dependent on its position above the sample. 
 To account for this, we perform a STEM measurement where we take the same converged probe but take a measurement at many different positions.

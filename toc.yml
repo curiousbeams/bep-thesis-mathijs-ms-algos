@@ -9,12 +9,14 @@ project:
     - file: content/ComparativeAnalysis.md
     - file: content/Conclusion.md
     - file: content/Recommendations.md
-    - file: content/testnotebook.md
     - title: Notebooks
       children:
+        - file: content/notebooks/multislice_fast.ipynb
         - file: content/notebooks/planewave_multislice.ipynb
+        - file: content/notebooks/CBED_multislice.ipynb
     - title: Appendix
       children:
         - file: content/AdditionalPlots.md
-        - file: content/Cheatsheet.md
-        - file: errorlog.md
+        - file: content/notebooks/thesis_sourcecode.md
+        # - file: content/Cheatsheet.md
+        # - file: errorlog.md

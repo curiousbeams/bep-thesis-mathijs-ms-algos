@@ -26,9 +26,9 @@ Here we find the CMS operator inside the square brackets in addition to a series
 
 ## Python Implementation
 Eq.[](#propagator_corrected_multislice_taylor_series) can be implemented numerically by utilizing the same method used for the exponent series where the higher powers of the propagator part can be calculated by applying the operator multiple times.
-After adding the right prefactor and taking the exponent we end up with correct result.
+After adding the right prefactor and taking the exponent we end up with correct result [Code. 3](#propagator-taylor-series).
 
-To calculate the exponent of this series we use the same exponential as in the previous chapter.
+To calculate the exponent of this series we use the same exponential as in the previous chapter [Code. 2](#multislice_exponential-series).
 
 ## Results
 In order to compare the propagator corrected multislice as fairly as possible to the conventional multislice, we will perform the conventional multislice calculations in realspace. 
