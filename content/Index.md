@@ -29,7 +29,7 @@ Supervisor: Dr. Georgios Varnavides
 +++
 
 This thesis implements two improved multislice algorithms into the open-source Python library abTEM. 
-This website will take you through a basic understanding of Transmission Electron Miscroscopy (TEM) and the multislice method which is the most popular method for simulation TEM.
+This website will take you through a basic understanding of Transmission Electron Microscopy (TEM) and the multislice method which is the most popular method for simulation TEM.
 After which the two new methods are explained and the results are presented. 
 Finally, all three methods are compared for various accelerating voltages using different techniques.
 This website also contains Jupyter notebooks to test out the new methods for yourself.
@@ -47,13 +47,13 @@ Go to the abstract of this thesis
 :header: Results
 :link: ComparativeAnalysis.md
 
-Jump to the results
+Go to the results
 ```
 ```{card}
 :header: Conclusion
 :link: Conclusion.md
 
-Jump to conclusions
+Go to conclusions
 ```
 ```{card}
 :header: Jupyter Notebooks

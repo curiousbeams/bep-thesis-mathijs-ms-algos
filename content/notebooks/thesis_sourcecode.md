@@ -8,6 +8,7 @@ For more information on the code please visit the abTEM [GitHub](https://github.
 
 (conventional-operator)=
 ```{code-cell} python
+:caption: The realspace conventional multislice step argument including the 2D Laplacian (propagator) and transmission operator. 
 def conventional_operator(
     waves: np.ndarray | da.core.Array,
     laplace: Callable,
@@ -34,6 +35,7 @@ def conventional_operator(
 
 (multislice_exponential-series)=
 ```{code-cell} python
+:caption: The multislice exponential series used to calculate the exponent of the 2D Laplacian and transmission operator @multislice-simplified-schrodinger. Might not converge for certain simulation parameters.
 def _multislice_exponential_series(
     waves: np.ndarray | da.core.Array,
     transmission_function: np.ndarray,
@@ -100,6 +102,7 @@ def _multislice_exponential_series(
 
 (propagator-taylor-series)=
 ```{code-cell} python
+:caption: Taylor series of the Propagator Corrected Multislice (PCMS) @propagator_corrected_multislice_taylor_series.
 def propagator_taylor_series(
     waves: np.ndarray | da.core.Array,
     order: int,
@@ -137,6 +140,7 @@ def propagator_taylor_series(
 
 (full-series)=
 ```{code-cell} python
+:caption: Taylor series of the Fully Corrected Multislice (FCMS) @fully-corrected-ms-ts. Also used for the backscatter operator.
 def full_series(
     waves: np.ndarray | da.core.Array,
     laplace: Callable,
@@ -166,6 +170,7 @@ def full_series(
 
 (calculate-backscatter)=
 ```{code-cell} python
+:caption: Part of the full multislice step that calculates the backscattered wave per slice @bs-operator.
 # constants and prefactors
 K0 = 1 / wavelength
 
@@ -223,6 +228,7 @@ waves._array = waves._array - backscatter
 
 (back-propagate_backscattered-waves)=
 ```{code-cell} python
+:caption: Function for reconstructing the full backscatter signal by multislicing all backscattered wave back through the sample and coherently summing all parts @backscatter-formula.
 def _back_propagate_backscattered_waves(
     backscattered_waves: Waves,
     potential: BasePotential,
