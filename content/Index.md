@@ -23,7 +23,7 @@ simulation software
 Author: Mathijs van den Doel  
 Supervisor: Dr. Georgios Varnavides 
 
-![](figures/CBED_cover.png)
+![](figures/cover.png)
 
 
 +++
@@ -33,32 +33,3 @@ This website will take you through a basic understanding of Transmission Electro
 After which the two new methods are explained and the results are presented. 
 Finally, all three methods are compared for various accelerating voltages using different techniques.
 This website also contains Jupyter notebooks to test out the new methods for yourself.
-
-+++ {"kind": "justified"}
-## Quick navigation
-````{grid} 2
-```{card}
-:header: Abstract
-:link: Introduction.md
-
-Go to the abstract of this thesis
-```
-```{card}
-:header: Results
-:link: ComparativeAnalysis.md
-
-Go to the results
-```
-```{card}
-:header: Conclusion
-:link: Conclusion.md
-
-Go to conclusions
-```
-```{card}
-:header: Jupyter Notebooks
-:link: notebooks/multislice_fast.ipynb
-
-Go to interactive notebooks
-```
-````

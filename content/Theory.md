@@ -52,12 +52,12 @@ When this wavefunction enters the sample, it obeys the so-called time-independen
 
 (time-independent-schrodinger)=
 $$
-\left[ \frac{h^2}{8\pi^2 m} \nabla_r^2 + eU(\boldsymbol{r}) + \frac{h^2 K_0^2}{2m} \right] \varPsi(\boldsymbol{r}) = 0
+\left[ \frac{h^2}{8\pi^2 m} \nabla_r^2 + eU(\boldsymbol{r}) + \frac{h^2 K_0^2}{2m} \right] \Psi(\boldsymbol{r}) = 0
 $$
 
 Because the CMS assumes a high velocity along the optical axis, we can write the wavefunction as: 
 $$
-\varPsi(\boldsymbol{R}, z) = \varphi(\boldsymbol{R}, z)e^{2\pi i K_0z}
+\Psi(\boldsymbol{R}, z) = \varphi(\boldsymbol{R}, z)e^{2\pi i K_0z}
 $$
 Here we have also separated the $z$ from the full position vector $\boldsymbol{r}$.
 Substituting this into Eq.[](#time-independent-schrodinger) and dropping the second derivative compared to $z$ because it is assumed to be a slow moving envelope, as demonstrated by @Ming2013, yields:

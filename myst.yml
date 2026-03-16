@@ -1,6 +1,7 @@
 version: 1
 project:
   title: Implementation of more accurate multislice algorithms for low energy TEM
+  short_title: Accurate TEM Multislice
   # description:
   keywords: [Jupyter Book, TU Delft, Bachelor eindproject, BEP, Bachelor thesis]
 
@@ -8,9 +9,9 @@ project:
   date: 2026-03-11
   
     # used to load /reuse materials from other repositories
-  references:
-    myst-guide: https://mystmd.org/guide
-    JB-workshop: https://jupyter-book.github.io/workshop-template/
+  # references:
+  #   myst-guide: https://mystmd.org/guide
+  #   JB-workshop: https://jupyter-book.github.io/workshop-template/
     
   exclude: 
     - datalog.md
@@ -18,9 +19,7 @@ project:
   bibliography:
     - references.bib
   
-  jupyter:
-    binder:
-      repo: https://github.com/curiousbeams/bep-thesis-mathijs-ms-algos
+  jupyter: true
   
 extends:
   - toc.yml     # includes table of contents

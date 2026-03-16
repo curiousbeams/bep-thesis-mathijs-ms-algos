@@ -96,7 +96,7 @@ Therefore, the results are presented the same way as that chapter.
 Also like in @PCMS the order of the FCMS operator goes up to the third power.
 
 ::::{tab-set}
-:::{tab-item} 24c
+:::{tab-item} 24 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_24_(FC)_blockdirect.png
 :label: SrTiO3_PW_24_FC_blockdirect
 :width: 100%
@@ -106,7 +106,7 @@ Diffraction patterns for SrTiO$_3$ illuminated by planewave for different energi
 ```
 :::
 
-:::{tab-item} 48c
+:::{tab-item} 48 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_48_(FC)_blockdirect.png
 :label: SrTiO3_PW_48_FC_blockdirect
 :width: 100%
@@ -118,7 +118,7 @@ Diffraction patterns for SrTiO$_3$ illuminated by planewave for different energi
 ::::
 
 ::::{tab-set}
-:::{tab-item} 24c
+:::{tab-item} 24 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_24_(FC)_magma.png
 :label: SrTiO3_PW_24
 :width: 100%
@@ -128,7 +128,7 @@ Comparison of the conventional multislice (CMS) and the propagator corrected mul
 ```
 :::
 
-:::{tab-item} 48c
+:::{tab-item} 48 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_48_(FC)_magma.png
 :label: SrTiO3_PW_48
 :width: 100%

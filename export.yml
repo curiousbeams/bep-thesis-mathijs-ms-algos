@@ -1,10 +1,10 @@
 version: 1
 project:
   exports:
-    # - format: pdf
-    #   template: https://github.com/TUD-JB-OS/latex_template.git
-    #   output: exports/report_tex.pdf
-    #   id: report_tex
+    - format: pdf
+      template: https://github.com/TUD-JB-OS/latex_template.git
+      output: exports/report_tex.pdf
+      id: report_tex
     
     - format: typst
       template: https://github.com/TUD-JB-OS/typst_template.git #https://github.com/TUD-JB-OS/typst_template.git
@@ -30,7 +30,7 @@ project:
   options:      
     thesis_degree: Bachelor of Science
     thesis_program: Applied Physics
-    thesis_faculty: Faculty of Applied Sciences
+    thesis_faculty: Faculty of Applied Science
     thesis_institution: Delft University of Technology
     thesis_defense_date: Friday December 19, 2025
 

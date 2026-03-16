@@ -34,7 +34,7 @@ To calculate the exponent of this series we use the same exponential as in the p
 In order to compare the propagator corrected multislice as fairly as possible to the conventional multislice, we will perform the conventional multislice calculations in realspace. 
 Keeping the calculations in realspace creates some artifacts compared to the fourier version, especially at low voltages (see @FFTvsRS), due the approximation of the laplacian by a finite difference stencil.
 However, since the fully corrected multislice can only be implemented in realspace, we decided to calculate the CMS in realspace as well.
-For the simulation a sampling interval of 0.1 $\mathring{A}$ x 0.1 $\mathring{A}$ was used and a slice thickness of 0.05 $\mathring{A}$.
+For the simulation a sampling interval of 0.1 Å x 0.1 Å was used and a slice thickness of 0.05 Å.
 
 The two methods (realspace MS and PCMS) are applied to a crystal of SrTiO3 @osti_1263154 with size of (1x1x24) unit cells and (1x1x48) unit cells for planewaves of different energies. 
 The propagator corrected operator is chosen to include up to the third power correction term.
@@ -47,7 +47,7 @@ For that reason in the next plot the central pixel is set to 0.
 To even further enhance visible detail the power of 0.25 is applied to the image.
 
 ::::{tab-set}
-:::{tab-item} 24c
+:::{tab-item} 24 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_24_(PC)_blockdirect.png
 :label: SrTiO3_PW_24_PC_blockdirect
 :width: 100%
@@ -58,7 +58,7 @@ Diffraction patterns for SrTiO$_3$ illuminated by planewave for different energi
 
 :::
 
-:::{tab-item} 48c
+:::{tab-item} 48 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_48_(PC)_blockdirect.png
 :label: SrTiO3_PW_48_PC_blockdirect
 :width: 100%
@@ -77,7 +77,7 @@ The result is the same dynamic range for all images allowing for a greater compa
 In the lowest row, the two plots are subtracted and again clipped by the 3\% quantiles of all subtracted plots combined.
 
 ::::{tab-set}
-:::{tab-item} 24c
+:::{tab-item} 24 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_24_(PC)_magma.png
 :label: SrTiO3_PW_24_PC
 :width: 100%
@@ -88,7 +88,7 @@ Comparison of the conventional multislice (CMS) and the propagator corrected mul
 
 :::
 
-:::{tab-item} 48c
+:::{tab-item} 48 unit cells z thickness
 ```{figure} ./plots/SrTiO3_PW_48_(PC)_magma.png
 :label: SrTiO3_PW_48_PC
 :width: 100%

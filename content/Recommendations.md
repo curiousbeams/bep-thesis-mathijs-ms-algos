@@ -1,4 +1,4 @@
-# Recommendations / Future Work
+# Recommendations
 This thesis implemented two new algorithms and coherent backscattering functionality to abTEM. While develop-
 ing these methods, the focus lay in the theoretical implementation of these algorithms. Therefore, performance and
 efficiency were not a priority . Although the laplace finite difference was adapted to run on the GPU, performance
